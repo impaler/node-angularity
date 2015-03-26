@@ -51,6 +51,12 @@ function setUpTaskWatch(context) {
           emitOnGlob: false
         }, queue.getHandler('javascript', 'html', 'reload')); // html will be needed in case previous injection failed
 
+        // Typescript
+        watch(getGlobApp('**/*.ts', '!*.*'), {
+          name      : 'TS',
+          emitOnGlob: false
+        }, queue.getHandler('javascript', 'html', 'reload')); // html will be needed in case previous injection failed
+
         watch(getGlobApp(['**/*.scss', '!*.scss']), {
           name      : 'CSS',
           emitOnGlob: false

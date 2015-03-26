@@ -103,6 +103,7 @@
     "task-yargs": "latest",
     "through-pipes": "latest",
     "through2": "latest",
+    "tsify": "^0.8.1",
     "wordwrap": "latest",
     "yargs": "latest"
   },
